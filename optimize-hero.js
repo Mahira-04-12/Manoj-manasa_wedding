@@ -2,7 +2,7 @@ const sharp = require("sharp");
 const a = (f) => require("path").join(__dirname, "public", "assets", f);
 (async () => {
   const jobs = [
-    ["MANpotrit.JPG", "hero-portrait.jpg", 1200, 1800],
+    ["MAN03173.JPG", "hero-portrait.jpg", 1200, 1800],
     ["MAN_land.JPG", "hero-landscape.jpg", 2400, 1600],
   ];
   for (const [src, out, w, h] of jobs) {
