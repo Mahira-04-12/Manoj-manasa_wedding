@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="kn">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manoj &amp; Manasa | ಶುಭ ವಿವಾಹ</title>
+    <meta name="description" content="Manoj weds Manasa — an invitation to our wedding celebration in Sirsi, Karnataka." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Cinzel:wght@400;600;700&family=Mrs+Saint+Delafield&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader">
+        <div class="diya">
+            <div class="flame"></div>
+            <div class="diya-base"></div>
+        </div>
+        <p class="preloader-text">ಶ್ರೀ ಗಣೇಶಾಯ ನಮಃ</p>
+    </div>
+    <!-- ===== background music ===== ------>
+    <audio id="bg-music" src="assets/invite.mp3" loop preload="auto"></audio>
+    <button id="music-toggle" class="music-btn" aria-label="Play music">
+  <span class="music-icon">♪</span>
+</button>
+
+    <!-- ===== ORNAMENTAL BORDER FRAME (persists, draws in) ===== -->
+    <svg class="frame-corner frame-tl" viewBox="0 0 120 120"><path d="M2,2 C 40,2 40,40 2,40" /><path d="M2,2 C 2,40 40,40 40,2" /></svg>
+    <svg class="frame-corner frame-tr" viewBox="0 0 120 120"><path d="M118,2 C 80,2 80,40 118,40" /><path d="M118,2 C 118,40 80,40 80,2" /></svg>
+
+    <!-- ===== CUSTOM CURSOR PETAL ===== -->
+    <div id="petal-cursor" aria-hidden="true"></div>
+
+    <!-- ===== NAV DOTS ===== -->
+    <nav class="section-nav" aria-label="Section navigation">
+        <a href="#hero" data-label="ಆರಂಭ"></a>
+        <a href="#story" data-label="ಕಥೆ"></a>
+        <a href="#events" data-label="ಸಮಾರಂಭ"></a>
+        <a href="#families" data-label="ಕುಟುಂಬ"></a>
+        <a href="#venue" data-label="ಸ್ಥಳ"></a>
+    </nav>
+
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section id="hero" class="hero">
+            <div class="hero-overlay" aria-hidden="true"></div>
+            <div class="hero-content">
+                <h2 class="hero-swash" id="hero-ganesh">॥ ಶ್ರೀ ಗಣೇಶಾಯ ನಮಃ ॥</h2>
+
+                <div class="hero-names">
+                    <h1 class="name name-groom">
+                        <span class="letters" data-text="Manoj">Manoj</span>
+                    </h1>
+                    <div class="hero-and">
+                        <span class="and-script">weds</span>
+                        <span class="and-motif" aria-hidden="true">❁</span>
+                    </div>
+                    <h1 class="name name-bride">
+                        <span class="letters" data-text="Manasa">Manasa</span>
+                    </h1>
+                </div>
+
+                <p class="hero-sub reveal-line">ಮನೋಜ &amp; ಮನಸಾ</p>
+
+                <div class="hero-date reveal-line">
+                    <span class="date-day">FRIDAY</span>
+                    <span class="date-divider"></span>
+                    <span class="date-full">Thursday · 10 December 2026</span>
+                </div>
+
+                <a href="#story" class="hero-cta">
+                    <span>ಆಮಂತ್ರಣ ತೆರೆಯಿರಿ</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 4v16M5 13l7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                </a>
+            </div>
+            <div class="hero-scroll-cue" aria-hidden="true"><span></span></div>
+        </section>
+
+        <!-- ===== COUNTDOWN STRIP ===== -->
+        <section class="countdown-strip" aria-label="Countdown to the wedding">
+            <div class="countdown" id="countdown">
+                <div class="count-block"><span class="count-num" id="cd-days">00</span><span class="count-label">ದಿನ / Days</span></div>
+                <div class="count-block"><span class="count-num" id="cd-hours">00</span><span class="count-label">ಗಂಟೆ / Hrs</span></div>
+                <div class="count-block"><span class="count-num" id="cd-mins">00</span><span class="count-label">ನಿಮಿಷ / Min</span></div>
+                <div class="count-block"><span class="count-num" id="cd-secs">00</span><span class="count-label">ಸೆಕೆಂಡ್ / Sec</span></div>
+            </div>
+        </section>
+
+        <!-- ===== STORY ===== -->
+        <section id="story" class="story">
+            <div class="section-eyebrow">॰ ನಮ್ಮ ಕಥೆ ॰</div>
+            <h2 class="section-title reveal-title">Two Families, One Blessing</h2>
+            <p class="story-copy reveal-copy">
+                With the blessings of our elders and the grace of the divine, we — Manoj and Manasa — are beginning a new chapter together. What started as quiet conversations has grown into a promise to walk every season of life side by side. We would be honoured to
+                have you witness the moment our two families become one.
+            </p>
+            <div class="story-motif" aria-hidden="true">
+                <svg viewBox="0 0 200 60" class="kalash-line"><path d="M0,30 Q50,5 100,30 T200,30" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+            </div>
+        </section>
+
+        <!-- ===== EVENTS TIMELINE ===== -->
+        <section id="events" class="events">
+            <div class="section-eyebrow">॰ ಸಮಾರಂಭದ ಝಲಕ ॰</div>
+            <h2 class="section-title reveal-title">Celebration Timeline</h2>
+
+            <div class="timeline">
+                <div class="timeline-line" aria-hidden="true"></div>
+
+                <article class="event-card" data-event="wedding">
+                    <div class="event-icon" aria-hidden="true">🔥</div>
+                    <div class="event-body">
+                        <span class="event-tag">ವಿವಾಹ</span>
+                        <h3>Wedding Ceremony</h3>
+                        <p class="event-date">Thursday, 10 December 2026 · 9:11 AM</p>
+                        <p class="event-place">Bride's Residence, Shashimane, Sirsi</p>
+                        <a class="event-map-link" href="https://maps.app.goo.gl/1L7bBhiGgen8gdhR7" target="_blank" rel="noopener">
+                            📍 ಶಶಿಮನೆ (Bride's Residence)
+                        </a>
+                    </div>
+                </article>
+
+                <article class="event-card" data-event="reception">
+                    <div class="event-icon" aria-hidden="true">💍</div>
+                    <div class="event-body">
+                        <span class="event-tag">ಅತಿಥಿ ಸತ್ಕಾರ</span>
+                        <h3>Reception</h3>
+                        <p class="event-date">Friday, 11 December 2026 · 11:00 AM onwards</p>
+                        <p class="event-place">Groom's Residence, Aasare, Kerekoppa, Sirsi</p>
+                        <a class="event-map-link" href="https://maps.app.goo.gl/jhRWnJJYJmam32n66" target="_blank" rel="noopener">
+                            📍 ಅಸರೆ (Groom's Residence)
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== FAMILIES ===== -->
+        <section id="families" class="families">
+            <div class="section-eyebrow">॰ ಕುಟುಂಬ ॰</div>
+            <h2 class="section-title reveal-title">Where Our Story Begins</h2>
+
+            <div class="family-grid">
+                <div class="family-card reveal-fam">
+                    <span class="family-side">ವರ</span>
+                    <h3>Manoj</h3>
+                    <p>Son of<br/>Shri Ganapati &amp; Smt. Gayatri</p>
+                </div>
+                <div class="family-divider" aria-hidden="true">
+                    <span class="om-symbol">ॐ</span>
+                </div>
+                <div class="family-card reveal-fam">
+                    <span class="family-side">ವಧು</span>
+                    <h3>Manasa</h3>
+                    <p>Daughter of<br/>Shri Mahadev &amp; Smt. Sumangala</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== VENUE ===== -->
+        <section id="venue" class="venue">
+            <div class="section-eyebrow">॰ ಸ್ಥಳ ॰</div>
+            <h2 class="section-title reveal-title">Find Your Way To Us</h2>
+            <p class="venue-address reveal-copy">
+                Sirsi, Karnataka
+            </p>
+            <div class="venue-links">
+                <a class="map-link" href="https://maps.app.goo.gl/1L7bBhiGgen8gdhR7" target="_blank" rel="noopener">
+                    Bride's Home
+                    <svg viewBox="0 0 24 24" width="14" height="14"><path d="M7 17L17 7M17 7H8M17 7v9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                </a>
+                <a class="map-link" href="https://maps.app.goo.gl/jhRWnJJYJmam32n66" target="_blank" rel="noopener">
+                    Groom's Home
+                    <svg viewBox="0 0 24 24" width="14" height="14"><path d="M7 17L17 7M17 7H8M17 7v9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="site-footer">
+            <div class="footer-motif" aria-hidden="true">❁ ⋆ ❁</div>
+            <p class="footer-names">Manoj &amp; Manasa</p>
+            <p class="footer-line">10.12.2026</p>
+            <p class="footer-credit">Crafted with love for our families &amp; friends</p>
+        </footer>
+
+    </main>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

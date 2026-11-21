@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# Original photos stay local; only assets used by the site are published
+public/assets/*
+!public/assets/hero-portrait.jpg
+!public/assets/hero-landscape.jpg
+!public/assets/invite.mp3
